@@ -26,7 +26,7 @@
 </div>
 
 <audio id="music" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/02/23/audio_8b0a2c9bbd.mp3">
+  <source src="{{ url_for('static', filename='song.mp3') }}" type="audio/mpeg">
 </audio>
 
 <button id="musicToggle">🔊</button>
