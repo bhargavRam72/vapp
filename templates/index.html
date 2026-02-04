@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine 💖</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="card">
+  <h1>Sahasra, Will you be my Valentine? 💕</h1>
+  <div class="buttons">
+    <button id="yesBtn">YES ❤️</button>
+    <button id="noBtn">NO 💔</button>
+  </div>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal">✖</span>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/02/23/audio_8b0a2c9bbd.mp3">
+</audio>
+
+<button id="musicToggle">🔊</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
